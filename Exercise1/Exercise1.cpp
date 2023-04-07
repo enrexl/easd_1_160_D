@@ -40,7 +40,7 @@ void input() {
 }
 
 
-void SelectionSort () {
+void SelectionSort() {
     for (int ER = 0; ER < n - 1; ER++)
     {
         int min_index = ER;
@@ -48,16 +48,15 @@ void SelectionSort () {
         {
             if (ers[i] < ers[min_index]) {
                 min_index = i;
+                int temp;
+                temp = ers[ER];
+                ers[ER] = ers[min_index];
+                ers[min_index] = temp;
             }
         }
-        int temp;
-        temp = ers[ER];
-        ers[ER] = ers[min_index];
-        ers[min_index] = temp;
-    
+        
+
     }
-
-
 }
 
 void display() {
