@@ -54,8 +54,6 @@ void SelectionSort() {
                 ers[min_index] = temp;
             }
         }
-        
-
     }
 }
 
