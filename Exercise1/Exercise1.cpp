@@ -44,7 +44,7 @@ void SelectionSort() {
     for (int ER = 0; ER < n - 1; ER++)
     {
         int min_index = ER;
-        for (int i = ER + 1; i < n - 1; i++)
+        for (int i = ER + 1; i <= n - 1; i++)
         {
             if (ers[i] < ers[min_index]) {
                 min_index = i;
