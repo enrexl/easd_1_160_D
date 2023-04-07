@@ -17,6 +17,7 @@ using namespace std;
 
 int ers[80];
 int n;
+int tukar = 0, banding = 0;
 
 void input() {
     while (true) {
@@ -61,6 +62,7 @@ void display() {
     cout << "\n==============" << endl;
     cout << "=Sorted Array=" << endl;
     cout << "==============" << endl;
+
     for (int i = 0; i < n; i++)
     {
         cout << ers[i] << " ";
