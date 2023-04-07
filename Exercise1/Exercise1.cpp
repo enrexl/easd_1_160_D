@@ -21,7 +21,7 @@ int tukar = 0, banding = 0;
 
 void input() {
     while (true) {
-        cout << "Masukkan panjang element array :";
+        cout << "Masukkan panjang element array : ";
         cin >> n;
 
         if (n <= 80)
@@ -35,7 +35,7 @@ void input() {
     cout << "=====================" << endl;
 
     for (int i = 0; i < n; i++) {
-        cout << "<" << (i + 1) << ">";
+        cout << "<" << (i + 1) << "> ";
         cin >> ers[i];
     }
 }
@@ -69,7 +69,8 @@ void display() {
     {
         cout << ers[i] << " ";
     }
-
+    cout << "\n\nJumlah Perbandingan : " << banding << endl;
+    cout << "Jumlah Pertukaran : " << tukar << endl;
 
 }
 
