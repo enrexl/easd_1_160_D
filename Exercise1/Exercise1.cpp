@@ -10,10 +10,10 @@
 //
 
 #include <iostream>
-using namespace std;
+using namespace std; 
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    
 }
 
-Jelaskan, mengapa suatu algorithma dibutuhkan untuk menyelesaikan suatu masalah
