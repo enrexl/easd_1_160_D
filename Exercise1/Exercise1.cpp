@@ -47,12 +47,14 @@ void SelectionSort() {
         int min_index = ER;
         for (int i = ER + 1; i <= n - 1; i++)
         {
+            banding++;
             if (ers[i] < ers[min_index]) {
                 min_index = i;
                 int temp;
                 temp = ers[ER];
                 ers[ER] = ers[min_index];
                 ers[min_index] = temp;
+                tukar++;
             }
         }
     }
@@ -67,6 +69,8 @@ void display() {
     {
         cout << ers[i] << " ";
     }
+
+
 }
 
 int main()
