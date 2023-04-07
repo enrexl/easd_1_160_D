@@ -59,6 +59,13 @@ void SelectionSort(int arr[]) {
     }
 }
 
+void keluar() {
+    for (int i = 0; i < n; i++)
+    {
+        cout << ers[i] << " ";
+    }
+}
+
 int main()
 {
     
