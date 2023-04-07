@@ -39,27 +39,28 @@ void input() {
     }
 }
 
-void tukar(int x, int y) {
-    int temp;
-    temp = ers[x];
-    ers[x] = ers[y];
-    ers[y] = temp;
 
-void SelectionSort(int arr[]) {
-    for (int i = 0; i < n - 1; i++)
+void SelectionSort () {
+    for (int ER = 0; ER < n - 1; ER++)
     {
-        int min_index = i;
-        for (int j = i + 1; j < n - 1; j++)
+        int min_index = ER;
+        for (int i = ER + 1; i < n - 1; i++)
         {
-            if (ers[j] < ers[i]) {
-                tukar(ers[j], ers[i]);
-                 
+            if (ers[i] < ers[min_index]) {
+                min_index = i;
             }
         }
+        int temp;
+        temp = ers[ER];
+        ers[ER] = ers[min_index];
+        ers[min_index] = temp;
+    
     }
+
+
 }
 
-void keluar() {
+void display() {
     for (int i = 0; i < n; i++)
     {
         cout << ers[i] << " ";
@@ -68,6 +69,9 @@ void keluar() {
 
 int main()
 {
-    
+    input();
+    SelectionSort();
+    display();
+    return 0;
 }
 
