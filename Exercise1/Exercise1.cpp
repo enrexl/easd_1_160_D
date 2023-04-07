@@ -1,6 +1,6 @@
 //1. Jelaskan, mengapa suatu algorithma dibutuhkan untuk menyelesaikan suatu masalah.
 //  - Algoritma memiliki cara penyelesaian sebuah masalah secara struktural, efisien, dan mendetail.
-//2. Dalam algorithma, di klassifikasikan menjadi 2 data struktur.Sebutkan 2 data struktur tersebut.
+//2. Dalam algoritma, di klassifikasikan menjadi 2 data struktur.Sebutkan 2 data struktur tersebut.
 //  - Linear dan Binary
 //3. Sebutkan faktor - faktor yang mempengaruhi mempengaruhi efisiensi suatu program algorithma!
 //  - Banyaknya data
@@ -36,6 +36,26 @@ void input() {
     for (int i = 0; i < n; i++) {
         cout << "<" << (i + 1) << ">";
         cin >> ers[i];
+    }
+}
+
+void swap(int x, int y) {
+    int temp;
+    temp = ers[x];
+    ers[x] = ers[y];
+    ers[y] = temp;
+
+void SelectionSort(int arr[]) {
+    for (int i = 0; i < n - 1; i++)
+    {
+        int min_index = i;
+        for (int j = i + 1; j < n - 1; j++)
+        {
+            if (ers[j] < ers[i]) {
+                swap(ers[i], ers[j])
+                    min_index = j
+            }
+        }
     }
 }
 
