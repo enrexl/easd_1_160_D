@@ -15,6 +15,30 @@
 #include <iostream>
 using namespace std; 
 
+int ers[80];
+int n;
+
+void input() {
+    while (true) {
+        cout << "Masukkan panjang element array :";
+        cin >> n;
+
+        if (n <= 80)
+            break;
+        else
+            cout << "\n Maksimum panjang array adalah 80" << endl;
+    }
+
+    cout << "\n=====================" << endl;
+    cout << " Enter Array Element" << endl;
+    cout << "=====================" << endl;
+
+    for (int i = 0; i < n; i++) {
+        cout << "<" << (i + 1) << ">";
+        cin >> ers[i];
+    }
+}
+
 int main()
 {
     
