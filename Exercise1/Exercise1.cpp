@@ -39,7 +39,7 @@ void input() {
     }
 }
 
-void swap(int x, int y) {
+void tukar(int x, int y) {
     int temp;
     temp = ers[x];
     ers[x] = ers[y];
@@ -52,8 +52,8 @@ void SelectionSort(int arr[]) {
         for (int j = i + 1; j < n - 1; j++)
         {
             if (ers[j] < ers[i]) {
-                swap(ers[i], ers[j])
-                    min_index = j
+                tukar(ers[j], ers[i]);
+                 
             }
         }
     }
